@@ -3,6 +3,8 @@ import networkx as nx
 def network_to_directed(network):
     G = nx.create_empty_copy(network)
     G = nx.DiGraph(G)
+
+    nx.set_node_attributes(G, "samevalueforallnodes", 'labels')
     for u,v,e in network.edges(data=True):
         u = int(u)
         v = int(v)
