@@ -17,5 +17,8 @@ def print_graph_info(G):
 
 network = nx.read_gexf('chessnetwork.gexf')
 network_filtered = nx.read_gexf('chessnetwork_filtered2.gexf')
+G = nx.read_gexf('C:\OmatProjektit\ComplexNetworks\graphs\chessnetwork_joined_filtered.gexf')
+G_giant = max(nx.connected_component_subgraphs(G), key=len)
 #print_graph_info(network)
-print_graph_info(network_filtered)
+#print_graph_info(network_filtered)
+print_graph_info(G_giant)
