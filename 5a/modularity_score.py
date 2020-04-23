@@ -32,10 +32,10 @@ communities_kclique = list(community_dict.values())
 community_dict = group_nodes_in_same_community(giant, "demon", True)
 communities_demon = list(community_dict.values())
 
-community_dict= group_nodes_in_same_community(giant, "louvain", True)
+community_dict = group_nodes_in_same_community(giant, "louvain", True)
 communities_louvain = list(community_dict.values())
 
-community_dict= group_nodes_in_same_community(giant, "infomap", True)
+community_dict = group_nodes_in_same_community(giant, "infomap", True)
 communities_infomap = list(community_dict.values())
 
 print("Modularity")
